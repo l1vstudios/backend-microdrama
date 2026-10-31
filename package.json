@@ -1,0 +1,25 @@
+{
+  "name": "morai-backend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "bridge": "bun run index.ts",
+    "dev": "bun --watch index.ts",
+    "migrate": "bun run migrate.ts",
+    "typecheck": "bunx tsc -p tsconfig.json",
+    "test": "bun test drado.test.ts",
+    "test:lighting": "bun test drado-lighting.test.ts",
+    "test:storyboard": "bun test drado-storyboard.test.ts",
+    "test:media": "bun test drado-media-hd.test.ts"
+  },
+  "dependencies": {
+    "hono": "^4.13.8",
+    "postgres": "^3.4.9"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "typescript": "~6.0.2"
+  }
+}
